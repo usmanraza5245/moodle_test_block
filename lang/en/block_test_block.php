@@ -10,5 +10,7 @@ $string['test_block:addinstance'] = 'Add a new test block';
 $string['test_block:myaddinstance'] = 'Add a new test block to Dashboard';
 $string['test_block'] = 'test_block';
 $string['pluginname'] = 'test_block';
+$string['showcourses'] = 'Show Courses';
+$string['showcoursesdesc'] = 'show courses instead of users';
 $string['search:content'] = 'test block content';
 $string['privacy:metadata:block'] = 'The test block stores all of its data within the block subsystem.';
