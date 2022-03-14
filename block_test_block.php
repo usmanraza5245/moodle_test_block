@@ -31,13 +31,20 @@ class block_test_block extends block_base
 
     function get_content()
     {
+        global $DB;
+
 
         if ($this->content !== NULL) {
             return $this->content;
         }
+        $users = $DB->get_records('user');
+        $userstring = '';
+        foreach ($users as $user) {
+            $userstring .= $user->firstname . ' ' . $user->lastname . '<br />';
+        }
 
         $this->content = new stdClass;
-        $this->content->text = 'This is the test block text area';
+        $this->content->text = $userstring;
         $this->content->footer = 'This is the footer';
 
         return $this->content;
